@@ -32,6 +32,26 @@ dependencies {
 }
 ```
 
+For Maven users add this in your pom.xml:
+
+```xml
+<dependencies>
+        <dependency>
+            <groupId>com.commonsware.cwac</groupId>
+            <artifactId>wakeful</artifactId>
+            <version>1.0.5</version>
+            <type>aar</type>
+        </dependency>
+</dependencies>
+<repositories>
+        <repository>
+            <id>wakeful-repository</id>
+            <name>wakeful repo</name>
+            <url>https://s3.amazonaws.com/repo.commonsware.com</url>
+        </repository>
+</repositories>
+```
+
 Or, if you cannot use SSL, use `http://repo.commonsware.com` for the repository
 URL.
 
